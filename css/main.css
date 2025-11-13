@@ -61,12 +61,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-/* Pink button style similar to your Project II Leaderboard, but cuter */
+/* Pink button style */
 .btn-link {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 999px;
-  background: #ec4899;              /* pink */
+  background: #ec4899;              
   color: #fdf2f8;
   text-decoration: none;
   font-weight: 600;
@@ -85,8 +85,8 @@ h3 {
 
 /* Secondary variant (for Source/Description) */
 .btn-link.secondary {
-  background: #111827;
-  color: #e5e7eb;
+  background: #ec4899;
+  color: #f799d8;
   border-color: #4b5563;
   box-shadow: none;
 }
