@@ -12,6 +12,7 @@ body {
 header {
   text-align: left;
   margin-bottom: 12px;
+  color: #f97316;
 }
 
 h2 {
@@ -37,7 +38,7 @@ h3 {
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #f97316; /* orange accent */
+  color: #f97316;
 }
 
 /* Assignment titles (Exercise 1, Project I, etc.) */
