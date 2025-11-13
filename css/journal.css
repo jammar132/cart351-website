@@ -1,38 +1,49 @@
-h2 {
-    text-align: center;
+/* Base styles */
+body {
+  margin: 0;
+  background-color: #FAEBF8; /* light pink all over */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
 }
 
-h3 {
-    text-align: center;
+/* Centered title */
+header {
+  text-align: center;
+  padding: 24px 0 10px;
+}
+
+h2 {
+  margin: 0;
 }
 
 main {
-    background: #FAEBF8;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 90vw;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto 40px;   /* center + bottom space */
+  padding: 0 16px;
 }
 
+/* Each week block stacked full width */
 section {
-    background-color: #CF4EC2;
-    width: 40vw;
-    margin-top: 10px;
-    margin-left: 2vw;
-    overflow: hidden;
+  background-color: #CF4EC2; /* darker pink frame */
+  margin-bottom: 18px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
+/* Week title */
 section h4 {
-    margin-top: 5px;
-    color: #F0C7EC;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 8px 12px;
+  background-color: #B43BB5;
+  color: #F0C7EC;
+  text-align: center;
+  font-weight: bold;
 }
 
+/* Text */
 section article {
-    background-color: #DC7FD3;
-    color: white;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #DC7FD3;
+  color: white;
+  padding: 12px 16px 16px;
+  line-height: 1.4;
 }
