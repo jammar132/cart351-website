@@ -47,3 +47,11 @@ section article {
   padding: 12px 16px 16px;
   line-height: 1.4;
 }
+
+/* Footer */
+footer {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-align: center;
+}
