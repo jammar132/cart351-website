@@ -35,10 +35,8 @@ h3 {
 .section-heading {
   margin-top: 8px;
   margin-bottom: 12px;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #f97316;
+  font-size: 1.4rem;     
+  color: #f97316;        
 }
 
 /* Assignment titles (Exercise 1, Project I, etc.) */
@@ -46,12 +44,31 @@ h3 {
   font-size: 0.9rem;
   font-weight: 600;
   color: #e5e7eb;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-/* Assignment blocks */
-.assignment-block {
-  margin-bottom: 18px;
+/* Grid of cards (3 per row on desktop) */
+.assignments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Each card */
+.assignment-card {
+  background-color: #111827;
+  border-radius: 12px;
+  padding: 12px 14px 14px;
+  box-shadow: 0 0 12px rgba(15, 23, 42, 0.9);
+  border: 1px solid #1f2937;
+}
+
+/* Stack to 1 column on small screens */
+@media (max-width: 768px) {
+  .assignments-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Buttons at top (Journal, Repo) */
@@ -62,18 +79,17 @@ h3 {
   flex-wrap: wrap;
 }
 
-/* Pink button style */
+/* Pink button style (primary) */
 .btn-link {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 999px;
-  background: #ec4899;              
-  color: #f799d8;
+  background: #ec4899;       
+  color: #fdf2f8;                  
   text-decoration: none;
   font-weight: 600;
   font-size: 0.85rem;
   border: 1px solid #f9a8d4;
-  border-color: #4b5563;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(236, 72, 153, 0.35);
   transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
@@ -84,6 +100,36 @@ h3 {
   box-shadow: 0 0 14px rgba(236, 72, 153, 0.6);
   transform: translateY(-1px);
 }
+
+/* Grey / secondary button */
+.btn-link.secondary {
+  background: #111827;
+  color: #e5e7eb;
+  border-color: #4b5563;
+  box-shadow: none;
+}
+
+.btn-link.secondary:hover {
+  background: #1f2937;
+  box-shadow: 0 0 10px rgba(156, 163, 175, 0.4);
+}
+
+/* Buttons at top (Journal, Repo) */
+.top-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Vertical button list under each assignment */
+.button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
 
 /* Vertical button list under each assignment */
 .button-column {
