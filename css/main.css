@@ -68,11 +68,12 @@ h3 {
   padding: 6px 14px;
   border-radius: 999px;
   background: #ec4899;              
-  color: #fdf2f8;
+  color: #f799d8;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.85rem;
   border: 1px solid #f9a8d4;
+  border-color: #4b5563;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(236, 72, 153, 0.35);
   transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
@@ -82,19 +83,6 @@ h3 {
   background: #f472b6;
   box-shadow: 0 0 14px rgba(236, 72, 153, 0.6);
   transform: translateY(-1px);
-}
-
-/* Secondary variant (for Source/Description) */
-.btn-link.secondary {
-  background: #ec4899;
-  color: #f799d8;
-  border-color: #4b5563;
-  box-shadow: none;
-}
-
-.btn-link.secondary:hover {
-  background: #1f2937;
-  box-shadow: 0 0 10px rgba(156, 163, 175, 0.4);
 }
 
 /* Vertical button list under each assignment */
