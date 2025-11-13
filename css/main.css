@@ -1,4 +1,4 @@
-/* Overall layout and colors */
+/* Base layout */
 body {
   background-color: #000000;
   color: #f3f4f6;
@@ -8,90 +8,115 @@ body {
   padding: 24px 16px 40px;
 }
 
+/* Header */
 header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 12px;
 }
 
 h2 {
-  margin-bottom: 4px;
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
   color: #e5e7eb;
 }
 
 h3 {
-  margin-top: 20px;
-  margin-bottom: 8px;
-  color: #a5b4fc; /* soft purple-blue for section titles */
+  margin: 0;
 }
 
 .subtitle {
   color: #9ca3af;
   margin-top: 4px;
+  font-size: 0.9rem;
 }
 
-/* Buttons */
-.top-buttons {
-  margin-top: 12px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: #f97316;        /* orange */
-  color: #111827;
-  text-decoration: none;
-  font-weight: 600;
+/* Section headings (Exercises / Projects) */
+.section-heading {
+  margin-top: 8px;
+  margin-bottom: 12px;
   font-size: 0.95rem;
-  border: none;
-  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #f97316; /* orange accent */
 }
 
-.btn:hover {
-  background: #fb923c;
-  transform: translateY(-1px);
-  box-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
-}
-
-.btn-secondary {
-  background: #22c55e;        /* green */
-  color: #052e16;
-}
-
-.btn-secondary:hover {
-  background: #4ade80;
-}
-
-/* Links in lists */
-a {
-  color: #38bdf8;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Sections & lists */
-.exercise-block {
-  margin-bottom: 16px;
-}
-
-.section-label {
+/* Assignment titles (Exercise 1, Project I, etc.) */
+.assignment-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e5e7eb;
   margin-bottom: 4px;
 }
 
-ul {
-  margin-left: 20px;
-  margin-top: 4px;
-  line-height: 1.4;
+/* Assignment blocks */
+.assignment-block {
+  margin-bottom: 18px;
 }
 
-/* Dividers */
+/* Buttons at top (Journal, Repo) */
+.top-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Pink button style similar to your Project II Leaderboard, but cuter */
+.btn-link {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #ec4899;              /* pink */
+  color: #fdf2f8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1px solid #f9a8d4;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.35);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+
+.btn-link:hover {
+  background: #f472b6;
+  box-shadow: 0 0 14px rgba(236, 72, 153, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Secondary variant (for Source/Description) */
+.btn-link.secondary {
+  background: #111827;
+  color: #e5e7eb;
+  border-color: #4b5563;
+  box-shadow: none;
+}
+
+.btn-link.secondary:hover {
+  background: #1f2937;
+  box-shadow: 0 0 10px rgba(156, 163, 175, 0.4);
+}
+
+/* Vertical button list under each assignment */
+.button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+/* Generic link style (in case any plain links remain) */
+a {
+  color: #38bdf8;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* Divider lines between major sections */
 .divider {
   border: none;
   border-top: 1px solid #4b5563;
@@ -100,8 +125,8 @@ ul {
 
 /* Footer */
 footer {
-  margin-top: 16px;
-  font-size: 0.85rem;
+  margin-top: 12px;
+  font-size: 0.8rem;
   color: #9ca3af;
   text-align: center;
 }
